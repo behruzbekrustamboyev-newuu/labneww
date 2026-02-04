@@ -1,0 +1,18 @@
+
+import java.util.Random;
+import java.lang.Math;
+import java.text.DecimalFormat;
+public class Main{
+    public static void main (String[] args){
+        Random rand = new Random();
+        double r = 1+rand.nextDouble()*(10-1);
+        r=Math.round(r*100.0)/100.0;
+         double circumference=2*Math.PI*r;
+         double area=Math.PI*r*r;
+         DecimalFormat df= new DecimalFormat("#.##");
+         System.out.println("Radius: " +df.format(r));
+         System.out.println("Circumference: "+df.format(circumference));
+         System.out.println("Area: "+df.format(area));
+
+    }
+}
